@@ -1,0 +1,50 @@
+.why .container {
+  text-align: center;
+  color: #292929;
+  margin-bottom: 180px;
+}
+
+.why__title-name {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57, 6px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.why__title-about {
+  color: #666;
+  font-size: 18px;
+  line-height: 21, 6;
+  margin-bottom: 49px;
+}
+
+.why__options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.why__options-item {
+  position: relative;
+}
+.why__options-item::before {
+  content: url("../../img/Combined.png");
+  display: block;
+  position: absolute;
+  left: 122%;
+  top: 18%;
+}
+.why__options-item:last-child::before {
+  content: "";
+}
+
+.why__options-item__icon {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.why__options-item__info-title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32, 4px;
+}

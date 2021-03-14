@@ -1,0 +1,31 @@
+.sidebar {
+  display: block;
+  position: absolute;
+  right: 44px;
+  top: 75px;
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__list-item {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.sidebar__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar__list-item__link {
+  background: url(../../img/Ellipse2.png) center center no-repeat;
+  padding: 9px;
+}
+.sidebar__list-item__link:hover {
+  content: url(../../img/Ellipse_range.png);
+}

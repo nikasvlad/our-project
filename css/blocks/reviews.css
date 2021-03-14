@@ -1,0 +1,122 @@
+.reviews {
+  margin-bottom: 125px;
+}
+
+.reviews__title {
+  margin-bottom: 74px;
+  text-align: center;
+}
+
+.reviews__title-name {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57, 6px;
+  color: #292929;
+  text-transform: uppercase;
+}
+
+.reviews__content {
+  position: relative;
+}
+
+.reviews__content:before {
+  content: "";
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  left: 50%;
+  top: -20px;
+  transform: translate(-50%, -50%);
+}
+
+.reviews__content-about {
+  padding: 42px;
+  background: #f8faf9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviews__content-about__logo {
+  margin-right: 40px;
+}
+
+.reviews__content-about__info-title {
+  color: #292929;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32, 4px;
+  margin-bottom: 12px;
+}
+
+.reviews__content-about__info-myself {
+  color: #666;
+  font-size: 18px;
+  line-height: 21, 6px;
+  width: 460px;
+  margin-bottom: 25px;
+}
+
+.reviews__content-about__info-name {
+  color: #292929;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.reviews__content-list {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__content-list__item {
+  margin-right: 6px;
+}
+.reviews__content-list__item:last-child {
+  margin-right: 0;
+}
+
+.reviews__content-list__item-link__alena {
+  display: block;
+  background-image: url("../../img/alena.png");
+  width: 74px;
+  height: 74px;
+}
+
+.reviews__img--active {
+  display: block;
+  background-image: url("../../img/alena_1.png");
+  width: 74px;
+  height: 74px;
+}
+
+.reviews__content-list__item-link__vadim {
+  display: block;
+  background-image: url("../../img/vadim.png");
+  width: 74px;
+  height: 74px;
+}
+
+.reviews__img--active {
+  display: block;
+  background-image: url("../../img/alena_1.png");
+  width: 74px;
+  height: 74px;
+}
+
+.reviews__content-list__item-link__masha {
+  display: block;
+  background-image: url("../../img/masha.png");
+  width: 74px;
+  height: 74px;
+}
+
+.reviews__img--active {
+  display: block;
+  background-image: url("../../img/alena_1.png");
+  width: 74px;
+  height: 74px;
+}
