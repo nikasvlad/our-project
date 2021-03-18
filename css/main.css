@@ -1,13 +1,5 @@
-@import url("./layout/normalize.css");
-@import url("./layout/base.css");
-
-@import url("./blocks/header.css");
-@import url("./blocks/main.css");
-@import url("./blocks/sidebar.css");
-@import url("./blocks/why.css");
-@import url("./blocks/options.css");
-@import url("./blocks/reviews.css");
-/* html,
+@import url("../css/layout/normalize.css");
+html,
 body {
   height: 100%;
 }
@@ -78,18 +70,34 @@ table {
 
 * {
   box-sizing: border-box;
-} */
+}
 
-/* .main__color {
-  background: #61c4d9;
+.main__color {
+  background: url("../img/list_2.png") bottom right no-repeat;
+  height: 100vh;
+  min-height: 650px;
   margin-bottom: 100px;
+  position: relative;
+  background-color: #61c4d9;
+}
+.main__color::before {
+  content: url("../img/list_3.png");
+  left: 3%;
+  bottom: -25px;
+  position: absolute;
+}
+
+.container__header {
+  padding-bottom: 84.1px;
 }
 
 .header {
-  padding-bottom: 84.1px;
   padding-top: 24.3px;
 }
 .header .container {
+  background: url("../img/comp_2.png") right center/50% auto no-repeat;
+}
+.header .container__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -142,9 +150,9 @@ table {
   width: 160px;
   height: 30px;
   left: -25px;
-} */
+}
 
-/* .main {
+.main {
   position: relative;
   margin-bottom: 50px;
 }
@@ -212,13 +220,14 @@ table {
   width: 114px;
   font-size: 16px;
   line-height: 18px;
-} */
+}
 
-/* .sidebar {
+.sidebar {
   display: block;
   position: absolute;
-  right: 44px;
-  top: 75px;
+  right: 3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sidebar__list {
@@ -244,9 +253,21 @@ table {
 }
 .sidebar__list-item__link:hover {
   content: url(../img/Ellipse_range.png);
-} */
+}
 
-/* .why .container {
+.why {
+  background: url("../img/uzor.png") left top 25% no-repeat;
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
+}
+.why::after {
+  content: url("../img/malina.png");
+  left: 0;
+  bottom: -100px;
+  position: absolute;
+}
+.why .container {
   text-align: center;
   color: #292929;
   margin-bottom: 180px;
@@ -291,13 +312,7 @@ table {
   position: relative;
 }
 
-.why__options-item__info-title {
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 32, 4px;
-} */
-
-/* .options__icon-man {
+.options__icon-man {
   text-align: center;
 }
 .options__icon-man::before {
@@ -331,10 +346,34 @@ table {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-} */
+}
 
-/* .reviews {
+.why__options-item__info-title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32, 4px;
+}
+
+.reviews {
   margin-bottom: 125px;
+  background: url("../img/zlaki.png") top 3% right 3% no-repeat;
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
+}
+.reviews::before {
+  content: url("../img/loza.png");
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -230px;
+}
+.reviews::after {
+  content: url("../img/4ernika.png");
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -160px;
 }
 
 .reviews__title {
@@ -377,6 +416,16 @@ table {
 
 .reviews__content-about__logo {
   margin-right: 40px;
+}
+
+.reviews__content-about__info {
+  position: relative;
+}
+.reviews__content-about__info::before {
+  content: url("../img/kust.png");
+  position: absolute;
+  top: -30px;
+  right: -145px;
 }
 
 .reviews__content-about__info-title {
@@ -454,4 +503,220 @@ table {
   background-image: url("../img/alena_1.png");
   width: 74px;
   height: 74px;
-} */
+}
+
+.delivery {
+  height: 100vh;
+  min-height: 650px;
+  background: url("../img/listo4ek.png") right 1% bottom 6% no-repeat, url("../img/e4rnika.png") left 3% bottom 7% no-repeat, url(../img/back.png) center center no-repeat;
+  position: relative;
+}
+.delivery .container {
+  padding: 62px 0px;
+}
+.delivery::before {
+  content: url(../img/e3evika.png);
+  position: absolute;
+  display: block;
+  right: 0;
+  top: -165px;
+}
+
+.delivery__title {
+  text-align: center;
+  color: #365a49;
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 57, 6px;
+  margin-bottom: 59px;
+}
+
+.delivery__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.delivery__main {
+  width: 460px;
+}
+
+.delivery__main-top {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.delivery__main-top__name {
+  margin-right: 17px;
+}
+
+.delivery__main-top__name-title, .delivery__form-button__reset, .delivery__form-order__comment-call__label-text, .delivery__form-order__comment-choose__real-money__title, .delivery__form-order__comment-input__title, .delivery__main-bottom__house-title,
+.delivery__main-bottom__hull-title,
+.delivery__main-bottom__apartment-title,
+.delivery__main-bottom__floor-title, .delivery__main-center__street-title, .delivery__main-top__phone-title {
+  color: #497870;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.delivery__main-top__name-input, .delivery__main-bottom__house-input,
+.delivery__main-bottom__hull-input,
+.delivery__main-bottom__apartment-input,
+.delivery__main-bottom__floor-input, .delivery__main-center__street-input, .delivery__main-top__phone-input {
+  color: #000;
+  padding: 19px 12px;
+  width: 222px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.delivery__main-center {
+  margin-bottom: 12px;
+}
+
+.delivery__main-center__street-input {
+  width: 459.53px;
+}
+
+.delivery__main-bottom {
+  display: flex;
+}
+
+.delivery__main-bottom__house-input,
+.delivery__main-bottom__hull-input,
+.delivery__main-bottom__apartment-input,
+.delivery__main-bottom__floor-input {
+  width: 105.52px;
+  margin-right: 13.48px;
+}
+
+.delivery__main-bottom__floor-input {
+  margin-right: 0px;
+}
+
+.delivery__form-order__comment-input {
+  margin-bottom: 38px;
+}
+
+.delivery__form-order__comment-input__form {
+  width: 450px;
+  height: 152px;
+  border: none;
+  border-radius: 4px;
+  padding: 11px 11px;
+  outline: none;
+  resize: none;
+}
+
+.delivery__form-order__comment-choose__real {
+  display: flex;
+  margin-bottom: 19px;
+}
+
+.delivery__form-order__comment-choose__real-money {
+  margin-right: 21px;
+}
+.delivery__form-order__comment-choose__real-money:last-child {
+  margin-right: 0px;
+}
+
+.delivery__form-order__comment-choose__real-money__btn {
+  display: none;
+}
+
+.delivery__form-order__comment-choose__real-money__title {
+  padding-left: 37px;
+  position: relative;
+}
+.delivery__form-order__comment-choose__real-money__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  left: 3px;
+  top: 0px;
+}
+.delivery__form-order__comment-choose__real-money__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  top: 6px;
+  left: 10px;
+  opacity: 0;
+  border-radius: 50%;
+  background: #365a49;
+  transition: 0.2s;
+}
+
+.delivery__form-order__comment-choose__real-money__btn:checked + .delivery__form-order__comment-choose__real-money__title::after {
+  opacity: 1;
+}
+
+.delivery__form-order__comment-call {
+  margin-bottom: 46px;
+}
+
+.delivery__form-order__comment-call__label-choose {
+  display: none;
+}
+
+.delivery__form-order__comment-call__label-text {
+  padding-left: 37px;
+  position: relative;
+}
+.delivery__form-order__comment-call__label-text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 3px;
+  top: -1px;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #fff;
+}
+.delivery__form-order__comment-call__label-text::after {
+  content: url("../img/good.png");
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: 10px;
+  opacity: 0;
+  width: 9.95px;
+  height: 8.01px;
+  transition: 0.2s;
+}
+
+.delivery__form-order__comment-call__label-choose:checked + .delivery__form-order__comment-call__label-text::after {
+  opacity: 1;
+}
+
+.delivery__form-button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.delivery__form-button__submit {
+  padding: 21px 41px;
+  background: #2e4e3f;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 30px;
+  outline: none;
+}
+
+.delivery__form-button__reset {
+  outline: none;
+  height: 22px;
+}
