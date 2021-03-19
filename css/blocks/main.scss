@@ -42,10 +42,11 @@
   background: #fff;
   border-radius: 30px;
   transition: 0.2s;
-}
-.main__order-btn__create:hover {
-  color: #fff;
-  background: #365a49;
+
+  &:hover {
+    color: #fff;
+    background: #365a49;
+  }
 }
 
 .main__addition-list {

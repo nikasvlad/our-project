@@ -1,0 +1,86 @@
+$black: #292929;
+
+.why {
+  background: url("../../img/uzor.png") left top 25% no-repeat;
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
+
+  .container {
+    text-align: center;
+    color: $black;
+    margin-bottom: 180px;
+  }
+
+  &::after {
+    content: url("../../img/malina.png");
+    left: 0;
+    bottom: -100px;
+    position: absolute;
+  }
+}
+
+.why__title-name {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.why__title-about {
+  color: #666;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 49px;
+}
+
+.why__options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.why__options-item {
+  position: relative;
+  &::before {
+    content: url("../../img/Combined.png");
+    display: block;
+    position: absolute;
+    left: 109%;
+    top: 23%;
+  }
+  &:last-child::before {
+    content: "";
+  }
+}
+
+.why__options-item__icon {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+@each $optionss in man, smile, strong {
+  .options__icon-#{$optionss} {
+    text-align: center;
+    &::before {
+      content: url("../../img/icon-#{$optionss}.png");
+      position: absolute;
+      display: block;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.why__options-item__info-title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30.4px;
+}
+
+.why__options-item__info-about {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.6px;
+}

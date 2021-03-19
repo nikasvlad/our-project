@@ -1,0 +1,127 @@
+$black: #292929;
+
+.reviews {
+  margin-bottom: 125px;
+  background: url("../../img/zlaki.png") top 3% right 3% no-repeat;
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
+
+  &::before {
+    content: url("../../img/loza.png");
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -230px;
+  }
+
+  &::after {
+    content: url("../../img/4ernika.png");
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -160px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.reviews__title-name {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.reviews__content {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    display: block;
+    left: 50%;
+    top: -10px;
+    transform: translate(-50%, -50%);
+    width: 8em;
+    height: 5em;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  }
+}
+
+.reviews__content-about {
+  padding: 39px;
+  background: #f8faf9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviews__content-about__logo {
+  margin-right: 40px;
+}
+
+.reviews__content-about__info {
+  position: relative;
+  &::before {
+    content: url("../../img/kust.png");
+    position: absolute;
+    top: -30px;
+    right: -145px;
+  }
+}
+
+.reviews__content-about__info-title {
+  color: $black;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32.4px;
+  margin-bottom: 12px;
+}
+
+.reviews__content-about__info-myself {
+  color: #666;
+  font-size: 18px;
+  line-height: 21.6px;
+  width: 460px;
+  margin-bottom: 25px;
+}
+
+.reviews__content-about__info-name {
+  color: $black;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.reviews__content-list {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__content-list__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@each $names in alena, vadim, masha {
+  .reviews__content-list__item-link__#{$names} {
+    display: block;
+    background-image: url("../../img/#{$names}.png");
+    width: 74px;
+    height: 74px;
+  }
+  .reviews__img--active {
+    display: block;
+    background-image: url("../../img/alena_1.png");
+    width: 74px;
+    height: 74px;
+  }
+}
