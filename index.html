@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap"
     rel="stylesheet">
@@ -62,11 +62,19 @@
               </ul>
             </nav>
             <address class="header__number">
-              <img src="./img/Vector.png" alt="Phone" class="header__number-icon">
+              <svg width="20" height="17" class="header__number-icon">
+                <use xlink:href="./css/layout/sprite.svg#phone"></use>
+              </svg>
+              <!-- <img src="./img/Vector.png" alt="Phone" class="header__number-icon"> -->
               <a href="tel:+78009039090" class="header__number-phone">
                 8 800 903 90 90
               </a>
             </address>
+            <a href="#" class="burger__menu">
+              <span class="burger__menu-content"></span>
+              <span class="burger__menu-content"></span>
+              <span class="burger__menu-content"></span>
+            </a>
           </div>
           <div class="container__main">
             <div class="main__order">
@@ -150,8 +158,8 @@
             </div>
             <div class="why__options-item__info">
               <div class="why__options-item__info-title">Полезно</div>
-              <p class="why__options-item__info-about">Натуральность - ключевое качество<br>нашей продукции. Мы
-                используем<br>только природные ингредиенты.
+              <p class="why__options-item__info-about">Натуральность - ключевое качество нашей продукции. Мы
+                используем только природные ингредиенты.
               </p>
             </div>
           </div>
@@ -161,8 +169,8 @@
             </div>
             <div class="why__options-item__info">
               <div class="why__options-item__info-title">Вкусно</div>
-              <p class="why__options-item__info-about">Нежный, ненавязчивый, изысканный – <br>так клиенты описывают
-                вкусовые <br>качества наших батончиков.
+              <p class="why__options-item__info-about">Нежный, ненавязчивый, изысканный – так клиенты описывают
+                вкусовые качества наших батончиков.
               </p>
             </div>
           </div>
@@ -172,8 +180,8 @@
             </div>
             <div class="why__options-item__info">
               <div class="why__options-item__info-title">Питательно</div>
-              <p class="why__options-item__info-about">Высокое содержание качественного <br>белка, а также всех
-                необходимых<br>витаминов и минералов.
+              <p class="why__options-item__info-about">Высокое содержание качественного белка, а также всех
+                необходимых витаминов и минералов.
               </p>
             </div>
           </div>
@@ -185,100 +193,145 @@
         <div class="reviews__title">
           <h3 class="reviews__title-name">Отзывы</h3>
         </div>
-        <div class="reviews__content">
-          <div class="reviews__content-about">
-            <div class="reviews__content-about__logo">
-              <img src="./img/face.png" alt="Лицо" class="reviews__content-about__logo-img">
-            </div>
-            <div class="reviews__content-about__info">
-              <div class="reviews__content-about__info-title">Лучший перекус</div>
-              <p class="reviews__content-about__info-myself">Я ем малыми порциями, но часто. Это повышает мою
-                продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто
-                не
-                могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.
-              </p>
-              <div class="reviews__content-about__info-name">Алёна Хмельницкая</div>
+        <div class="reviews__color">
+          <div class="reviews__content">
+            <div class="reviews__content-about">
+              <div class="reviews__content-about__logo">
+                <img src="./img/face.png" alt="Лицо" class="reviews__content-about__logo-img">
+              </div>
+              <div class="reviews__content-about__info">
+                <div class="reviews__content-about__info-title">Лучший перекус</div>
+                <p class="reviews__content-about__info-myself">Я ем малыми порциями, но часто. Это повышает мою
+                  продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто
+                  не
+                  могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.
+                </p>
+                <div class="reviews__content-about__info-name">Алёна Хмельницкая</div>
+              </div>
             </div>
           </div>
-          <ul class="reviews__content-list">
-            <il class="reviews__content-list__item"><a href="#"
-                class="reviews__content-list__item-link__alena reviews__img--active"></a></il>
-            <il class="reviews__content-list__item"><a href="#" class="reviews__content-list__item-link__vadim"></a>
-            </il>
-            <il class="reviews__content-list__item"><a href="#" class="reviews__content-list__item-link__masha"></a>
-            </il>
-          </ul>
         </div>
+        <ul class="reviews__content-list">
+          <il class="reviews__content-list__item"><a href="#"
+              class="reviews__content-list__item-link__alena reviews__img--active"></a></il>
+          <il class="reviews__content-list__item"><a href="#" class="reviews__content-list__item-link__vadim"></a>
+          </il>
+          <il class="reviews__content-list__item"><a href="#" class="reviews__content-list__item-link__masha"></a>
+          </il>
+        </ul>
       </div>
     </section>
     <section class="delivery">
       <div class="container">
         <div class="delivery__title">Закажите доставку</div>
-        <div class="delivery__container">
-          <div class="delivery__main">
-            <div class="delivery__main-top">
-              <div class="delivery__main-top__name">
-                <div class="delivery__main-top__name-title">Имя</div>
-                <input type="text" class="delivery__main-top__name-input">
-              </div>
-              <div class="delivery__main-top__phone">
-                <div class="delivery__main-top__phone-title">Телефон</div>
-                <input type="text" class="delivery__main-top__phone-input">
-              </div>
+        <form class="form__container">
+          <div class="form__col">
+            <div class="form__row">
+              <label class="form__info">
+                <div class="form__title">Имя</div>
+                <input type="text" class="form__input">
+              </label>
+              <label class="form__info">
+                <div class="form__title">Телефон</div>
+                <input type="text" class="form__input">
+              </label>
             </div>
-            <div class="delivery__main-center">
-              <div class="delivery__main-center__street-title">Улица</div>
-              <input type="text" class="delivery__main-center__street-input">
+            <div class="form__row">
+              <label class="form__info">
+                <div class="form__title">Улица</div>
+                <input type="text" class="form__input">
+              </label>
             </div>
-            <div class="delivery__main-bottom">
-              <div class="delivery__main-bottom__house">
-                <div class="delivery__main-bottom__house-title">Дом</div>
-                <input type="text" class="delivery__main-bottom__house-input">
-              </div>
-              <div class="delivery__main-bottom__hull">
-                <div class="delivery__main-bottom__hull-title">Корпус</div>
-                <input type="text" class="delivery__main-bottom__hull-input">
-              </div>
-              <div class="delivery__main-bottom__apartment">
-                <div class="delivery__main-bottom__apartment-title">Квартира</div>
-                <input type="text" class="delivery__main-bottom__apartment-input">
-              </div>
-              <div class="delivery__main-bottom__floor">
-                <div class="delivery__main-bottom__floor-title">Этаж</div>
-                <input type="text" class="delivery__main-bottom__floor-input">
-              </div>
+            <div class="form__row">
+              <label class="form__info">
+                <div class="form__title">Дом</div>
+                <input type="text" class="form__input">
+              </label>
+              <label class="form__info">
+                <div class="form__title">Корпус</div>
+                <input type="text" class="form__input">
+              </label>
+              <label class="form__info">
+                <div class="form__title">Квартира</div>
+                <input type="text" class="form__input">
+              </label>
+              <label class="form__info">
+                <div class="form__title">Этаж</div>
+                <input type="text" class="form__input">
+              </label>
             </div>
           </div>
-          <div class="delivery__form">
-            <div class="delivery__form-order">
-              <div class="delivery__form-order__comment">
-                <div class="delivery__form-order__comment-input">
-                  <div class="delivery__form-order__comment-input__title">Комментарий</div>
-                  <textarea class="delivery__form-order__comment-input__form"></textarea>
-                </div>
-                <div class="delivery__form-order__comment-choose__real">
-                  <label class="delivery__form-order__comment-choose__real-money">
-                    <input type="radio" name="choose" class="delivery__form-order__comment-choose__real-money__btn">
-                    <div class="delivery__form-order__comment-choose__real-money__title">Потребуется сдача</div>
-                  </label>
-                  <label class="delivery__form-order__comment-choose__real-money">
-                    <input type="radio" name="choose" class="delivery__form-order__comment-choose__real-money__btn">
-                    <div class="delivery__form-order__comment-choose__real-money__title">Оплата картой</div>
-                  </label>
-                </div>
-                <div class="delivery__form-order__comment-call">
-                  <label lass="delivery__form-order__comment-call__label">
-                    <input type="checkbox" name="call" class="delivery__form-order__comment-call__label-choose">
-                    <div class="delivery__form-order__comment-call__label-text">Не перезванивать</div>
-                  </label>
-                </div>
-                <div class="delivery__form-button">
+          <div class="form__col">
+            <div class="form__row">
+              <label class="form__info">
+                <div class="form__title">Комментарий</div>
+                <textarea class="form__input form__textarea"></textarea>
+              </label>
+            </div>
+            <div class="form__choose">
+              <div class="form__row">
+                <label class="form__info">
+                  <input type="radio" name="choose" class="form__input-checkbox">
+                  <div class="form__title delivery__form-order">Потребуется сдача</div>
+                </label>
+                <label class="form__info">
+                  <input type="radio" name="choose" class="form__input-checkbox">
+                  <div class="form__title delivery__form-order">Оплата картой</div>
+                </label>
+              </div>
+              <div class="form__row form__row--shift">
+                <label lass="form__info">
+                  <input type="checkbox" name="call" class="delivery__form-order__call">
+                  <div class="form__title delivery__form-order__pay">Не перезванивать</div>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="delivery__form-button">
                   <button type="submit" class="delivery__form-button__submit">Заказать</button>
                   <button type="reset" class="delivery__form-button__reset">Очистить</button>
-                </div>
+                </label>
               </div>
             </div>
           </div>
+        </form>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__map">
+        <img src="./img/map.png" alt="Geo" class="contacts__map-content">
+      </div>
+      <div class="contacts__info">
+        <address class="contacts__info-address">
+          <div class="contacts__info-address__geo">
+            Москва, ул.Новый Арбат, д.31/12
+          </div>
+          <div class="contacts__info-address__phone">
+            <a href="tel:+78009039090" class="contacts__info-address__phone-link header__number-phone">
+              8 800 903 90 90
+            </a>
+          </div>
+        </address>
+        <div class="contacts__info-social">
+          <a href="https://vk.com/" target="_blank" class="contacts__info-social__link-vk">
+            <svg width="20" height="12" class="vk-icon">
+              <use xlink:href="./css/layout/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="contacts__info-social__link-fc">
+            <svg width="20" height="20" class="fc-icon">
+              <use xlink:href="./css/layout/sprite.svg#fc"></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="contacts__info-social__link-inst">
+            <svg width="20" height="20" class="inst-icon">
+              <use xlink:href="./css/layout/sprite.svg#inst"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="contacts__info-social__link-tw">
+            <svg width="20" height="17" class="tw-icon">
+              <use xlink:href="./css/layout/sprite.svg#tw"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </section>

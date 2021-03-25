@@ -1,36 +1,41 @@
 .reviews {
-  margin-bottom: 125px;
-  background: url("../../img/zlaki.png") top 3% right 3% no-repeat;
+  margin-bottom: 6.94rem;
+  background: url("../../img/zlaki.png") top right 3% no-repeat;
   position: relative;
   height: 100vh;
-  min-height: 650px;
+  min-height: 12.77rem;
 }
 .reviews::before {
   content: url("../../img/loza.png");
   position: absolute;
   display: block;
   left: 0;
-  bottom: -230px;
+  bottom: -12.77rem;
 }
 .reviews::after {
   content: url("../../img/4ernika.png");
   position: absolute;
   display: block;
   left: 0;
-  bottom: -160px;
+  bottom: -6rem;
 }
 
 .reviews__title {
-  margin-bottom: 32px;
+  margin-bottom: 1.77rem;
   text-align: center;
 }
 
 .reviews__title-name {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 57.6px;
+  font-size: 2.66rem;
+  line-height: 3.2rem;
   color: #292929;
   text-transform: uppercase;
+}
+
+.reviews__color {
+  flex: 1;
+  background: #f8faf9;
 }
 
 .reviews__content {
@@ -42,55 +47,49 @@
   background: #fff;
   display: block;
   left: 50%;
-  top: -10px;
+  top: -0.55rem;
   transform: translate(-50%, -50%);
-  width: 8em;
-  height: 5em;
+  width: 4.6rem;
+  height: 3rem;
   border-radius: 0 0 50% 50%/0 0 100% 100%;
 }
 
 .reviews__content-about {
-  padding: 39px;
-  background: #f8faf9;
+  padding: 2.16rem;
+  background: url("../../img/kust.png") top 1.22rem right no-repeat;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 0.83rem;
 }
 
 .reviews__content-about__logo {
-  margin-right: 40px;
+  margin-right: 2.22rem;
 }
 
-.reviews__content-about__info {
-  position: relative;
-}
-.reviews__content-about__info::before {
-  content: url("../../img/kust.png");
-  position: absolute;
-  top: -30px;
-  right: -145px;
+.reviews__content-about__logo-img {
+  max-width: 100%;
 }
 
 .reviews__content-about__info-title {
   color: #292929;
   font-weight: 700;
-  font-size: 27px;
-  line-height: 32.4px;
-  margin-bottom: 12px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin-bottom: 0.66rem;
 }
 
 .reviews__content-about__info-myself {
   color: #666;
-  font-size: 18px;
-  line-height: 21.6px;
-  width: 460px;
-  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  max-width: 25.55rem;
+  margin-bottom: 1.38rem;
 }
 
 .reviews__content-about__info-name {
   color: #292929;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.33rem;
   font-weight: 500;
 }
 
@@ -100,7 +99,7 @@
 }
 
 .reviews__content-list__item {
-  margin-right: 6px;
+  margin-right: 0.33rem;
 }
 .reviews__content-list__item:last-child {
   margin-right: 0;

@@ -1,25 +1,25 @@
 .main__color {
   background: url("../../img/list_2.png") bottom right no-repeat;
   height: 100vh;
-  min-height: 650px;
-  margin-bottom: 100px;
+  min-height: 36.11rem;
+  margin-bottom: 5.55rem;
   position: relative;
   background-color: #61c4d9;
 
   &::before {
     content: url("../../img/list_3.png");
     left: 3%;
-    bottom: -25px;
+    bottom: -1.38rem;
     position: absolute;
   }
 }
 
 .container__header {
-  margin-bottom: 19vh;
+  margin-bottom: 4.66rem;
 }
 
 .header {
-  padding-top: 24.3px;
+  padding-top: 1.35rem;
 
   .container {
     background: url("../../img/comp_2.png") right center / 49% auto no-repeat;
@@ -28,16 +28,22 @@
   .container__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
+}
+
+.header__menu {
+  margin: 0 1.66rem;
+  padding-top: 0.2rem;
 }
 
 .header__menu-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .header__menu-list__item {
-  margin-right: 27px;
+  margin-right: 1.5rem;
 
   &:last-child {
     margin-right: 0;
@@ -48,8 +54,9 @@
   text-decoration: none;
   transition: 0.3s;
   color: #ffffff;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.11rem;
+  white-space: nowrap;
 
   &:hover {
     color: #b3b3b3;
@@ -57,27 +64,43 @@
 }
 
 .header__number {
-  width: 166px;
+  width: 9.22rem;
   display: flex;
   justify-content: space-between;
+  padding-top: 0.3rem;
 }
 .header__number-icon {
   position: relative;
 }
 
 .header__number-phone {
-  font-size: 22px;
-  line-height: 18px;
+  font-size: 1.22rem;
+  line-height: 1rem;
   text-decoration: none;
-  width: 146px;
+  width: 8.11rem;
   position: relative;
+  white-space: nowrap;
 
   &::before {
     content: "";
     display: block;
     position: absolute;
-    width: 160px;
-    height: 30px;
-    left: -25px;
+    width: 8.88rem;
+    height: 1.66rem;
+    left: 1.38rem;
   }
+}
+
+.burger__menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+}
+
+.burger__menu-content {
+  width: 26px;
+  height: 5px;
+  background: #fff;
+  border-radius: 3px;
 }

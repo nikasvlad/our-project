@@ -2,33 +2,33 @@
   background: url("../../img/uzor.png") left top 25% no-repeat;
   position: relative;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.11rem;
 }
 .why .container {
   text-align: center;
   color: #292929;
-  margin-bottom: 180px;
+  margin-bottom: 10rem;
 }
 .why::after {
   content: url("../../img/malina.png");
   left: 0;
-  bottom: -100px;
+  bottom: -5.55rem;
   position: absolute;
 }
 
 .why__title-name {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 57.6px;
+  font-size: 2.66rem;
+  line-height: 3.2rem;
   text-transform: uppercase;
-  margin-bottom: 19px;
+  margin-bottom: 1.05rem;
 }
 
 .why__title-about {
   color: #666;
-  font-size: 18px;
-  line-height: 21.6px;
-  margin-bottom: 49px;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 2.72rem;
 }
 
 .why__options {
@@ -43,15 +43,16 @@
   content: url("../../img/Combined.png");
   display: block;
   position: absolute;
-  left: 109%;
+  left: 103%;
   top: 23%;
+  transform: translate(-50%, -50%);
 }
 .why__options-item:last-child::before {
   content: "";
 }
 
 .why__options-item__icon {
-  margin-bottom: 20px;
+  margin-bottom: 1.11rem;
   position: relative;
 }
 
@@ -92,13 +93,13 @@
 }
 
 .why__options-item__info-title {
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 30.4px;
+  line-height: 1.68rem;
 }
 
 .why__options-item__info-about {
   font-weight: 300;
-  font-size: 18px;
-  line-height: 21.6px;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }

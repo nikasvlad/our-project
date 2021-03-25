@@ -1,0 +1,59 @@
+.contacts__map-content {
+  max-width: 100%;
+  width: 106.66rem;
+}
+
+.contacts__info {
+  padding: 0.94rem 4.16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__info-address__geo {
+  font-size: 1.14rem;
+  line-height: 1.33rem;
+  color: #292929;
+}
+
+.contacts__info-address__phone-link {
+  color: #497870;
+  padding-left: 1.05rem;
+  position: relative;
+
+  &::before {
+    content: url(../../img/phone_green.svg);
+    top: 40%;
+    transform: translate(0%, -50%);
+    width: 0.66rem;
+    height: 0.66rem;
+    position: absolute;
+    display: block;
+    left: 0;
+  }
+}
+
+.contacts__info-social {
+  display: flex;
+}
+
+@each $social in vk, fc, inst, tw {
+  .contacts__info-social__link-#{$social} {
+    margin-right: 0.77rem;
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .#{$social}-icon {
+    fill: #b3b3b3;
+
+    &:hover {
+      fill: #292929;
+    }
+  }
+}

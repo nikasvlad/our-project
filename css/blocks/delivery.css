@@ -1,194 +1,157 @@
 .delivery {
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.11rem;
   background: url("../../img/listo4ek.png") right 1% bottom 6% no-repeat, url("../../img/e4rnika.png") left 3% bottom 7% no-repeat, url("../../img/back.png") center center no-repeat;
   position: relative;
 }
 .delivery .container {
-  padding: 62px 0px;
+  padding: 3.44rem 0px;
 }
 .delivery::before {
   content: url("../../img/e3evika.png");
   position: absolute;
   display: block;
   right: 0;
-  top: -165px;
+  top: -9.16rem;
 }
 
 .delivery__title {
   text-align: center;
   color: #365a49;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 2.66rem;
   text-transform: uppercase;
-  line-height: 57.6px;
-  margin-bottom: 59px;
+  line-height: 3.2rem;
+  margin-bottom: 3.27rem;
 }
 
-.delivery__container {
+.form__container {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 46px;
 }
 
-.delivery__main {
-  width: 460px;
+.form__col {
+  flex: 1;
+  margin-right: 1.11rem;
+}
+.form__col:last-child {
+  margin-right: 0;
 }
 
-.delivery__main-top {
+.form__row {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 0.66rem;
+}
+.form__row:last-child {
+  margin-bottom: 0;
 }
 
-.delivery__main-top__name {
-  margin-right: 17px;
+.form__info {
+  flex: 1;
+  margin-right: 0.94rem;
+}
+.form__info:last-child {
+  margin-right: 0;
 }
 
-.delivery__main-top__name-title, .delivery__form-button__reset, .delivery__form-order__comment-call__label-text, .delivery__form-order__comment-choose__real-money__title, .delivery__form-order__comment-input__title, .delivery__main-bottom__house-title,
-.delivery__main-bottom__hull-title,
-.delivery__main-bottom__apartment-title,
-.delivery__main-bottom__floor-title, .delivery__main-center__street-title, .delivery__main-top__phone-title {
+.form__title {
   color: #497870;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 21.6px;
+  white-space: nowrap;
 }
 
-.delivery__main-top__name-input, .delivery__main-bottom__house-input,
-.delivery__main-bottom__hull-input,
-.delivery__main-bottom__apartment-input,
-.delivery__main-bottom__floor-input, .delivery__main-center__street-input, .delivery__main-top__phone-input {
-  color: #000;
-  padding: 23px 12px;
-  width: 222px;
-  border-radius: 4px;
-  border: none;
+.form__input {
+  width: 100%;
+  padding: 0.61rem 1rem;
+  border-radius: 0.2222rem;
+  border: 0.1667rem solid transparent;
   outline: none;
+  transition: 0.3s;
+  height: 3.22rem;
+}
+.form__input:focus {
+  border: 0.1667rem solid #dee2bd;
 }
 
-.delivery__main-center {
-  margin-bottom: 12px;
-}
-
-.delivery__main-center__street-input {
-  width: 459.53px;
-}
-
-.delivery__main-bottom {
-  display: flex;
-}
-
-.delivery__main-bottom__house-input,
-.delivery__main-bottom__hull-input,
-.delivery__main-bottom__apartment-input,
-.delivery__main-bottom__floor-input {
-  width: 105.52px;
-  margin-right: 13.48px;
-}
-
-.delivery__main-bottom__floor-input {
-  margin-right: 0px;
-}
-
-.delivery__form-order__comment-input {
-  margin-bottom: 38px;
-}
-
-.delivery__form-order__comment-input__form {
-  width: 450px;
-  height: 152px;
-  border: none;
-  border-radius: 4px;
-  padding: 11px 11px;
-  outline: none;
+.form__textarea {
   resize: none;
+  height: 8.44rem;
 }
 
-.delivery__form-order__comment-choose__real {
-  display: flex;
-  margin-bottom: 19px;
-}
-
-.delivery__form-order__comment-choose__real-money {
-  margin-right: 21px;
-}
-.delivery__form-order__comment-choose__real-money:last-child {
-  margin-right: 0px;
-}
-
-.delivery__form-order__comment-choose__real-money__btn {
+.form__input-checkbox {
   display: none;
 }
 
-.delivery__form-order__comment-choose__real-money__title {
-  padding-left: 37px;
+.delivery__form-order {
+  padding-left: 2.05rem;
   position: relative;
 }
-.delivery__form-order__comment-choose__real-money__title::before {
+.delivery__form-order::before {
   content: "";
   display: block;
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 1.38rem;
+  height: 1.38rem;
   border-radius: 50%;
   background: #fff;
-  left: 3px;
+  left: 0.16rem;
   top: 0px;
 }
-.delivery__form-order__comment-choose__real-money__title::after {
+.delivery__form-order::after {
   content: "";
   position: absolute;
   display: block;
-  width: 12px;
-  height: 12px;
-  top: 6px;
-  left: 10px;
+  width: 0.66rem;
+  height: 0.66rem;
+  top: 0.33rem;
+  left: 0.55rem;
   opacity: 0;
   border-radius: 50%;
   background: #365a49;
   transition: 0.2s;
 }
 
-.delivery__form-order__comment-choose__real-money__btn:checked + .delivery__form-order__comment-choose__real-money__title::after {
+.form__input-checkbox:checked + .delivery__form-order::after {
   opacity: 1;
 }
 
-.delivery__form-order__comment-call {
-  margin-bottom: 49px;
-}
-
-.delivery__form-order__comment-call__label-choose {
+.delivery__form-order__call {
   display: none;
 }
 
-.delivery__form-order__comment-call__label-text {
-  padding-left: 37px;
+.delivery__form-order__pay {
+  padding-left: 2.05rem;
   position: relative;
 }
-.delivery__form-order__comment-call__label-text::before {
+.delivery__form-order__pay::before {
   content: "";
   position: absolute;
   display: block;
-  left: 3px;
-  top: -1px;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
+  left: 0.16rem;
+  top: -0.05rem;
+  width: 1.33rem;
+  height: 1.33rem;
+  border-radius: 0.22rem;
   background: #fff;
 }
-.delivery__form-order__comment-call__label-text::after {
+.delivery__form-order__pay::after {
   content: url("../../img/good.png");
   position: absolute;
   display: block;
-  top: -1px;
-  left: 10px;
+  top: -0.05rem;
+  left: 0.55rem;
   opacity: 0;
-  width: 9.95px;
-  height: 8.01px;
+  width: 0.55rem;
+  height: 0.44rem;
   transition: 0.2s;
 }
 
-.delivery__form-order__comment-call__label-choose:checked + .delivery__form-order__comment-call__label-text::after {
+.delivery__form-order__call:checked + .delivery__form-order__pay::after {
   opacity: 1;
+}
+
+.form__row--shift {
+  margin-bottom: 2.22rem;
 }
 
 .delivery__form-button {
@@ -198,16 +161,16 @@
 }
 
 .delivery__form-button__submit {
-  padding: 21px 41px;
+  padding: 1.16rem 2.27rem;
   background: #2e4e3f;
   text-transform: uppercase;
   color: #fff;
   font-weight: 800;
-  font-size: 16px;
-  line-height: 18px;
-  border-radius: 30px;
+  font-size: 0.88rem;
+  line-height: 1rem;
+  border-radius: 1.66rem;
   outline: none;
-  margin-right: 5px;
+  margin-right: 0.27rem;
   transition: 0.2s;
 }
 .delivery__form-button__submit:hover {
@@ -217,5 +180,5 @@
 
 .delivery__form-button__reset {
   outline: none;
-  height: 22px;
+  height: 1.22rem;
 }
