@@ -6,6 +6,9 @@ $black: #292929;
   position: relative;
   height: 100vh;
   min-height: 12.77rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &::before {
     content: url("../../img/loza.png");

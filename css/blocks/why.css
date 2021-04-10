@@ -8,6 +8,10 @@
   text-align: center;
   color: #292929;
   margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .why::after {
   content: url("../../img/malina.png");

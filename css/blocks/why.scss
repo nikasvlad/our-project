@@ -10,6 +10,10 @@ $black: #292929;
     text-align: center;
     color: $black;
     margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
 
   &::after {
