@@ -1,0 +1,209 @@
+.slider {
+  height: 100vh;
+  background-color: #f8faf9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 67px;
+  .container {
+    position: relative;
+  }
+}
+
+.arrows__slide {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slider__arrow-left {
+  display: block;
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  top: 50%;
+  transform: rotate(45deg);
+  margin-left: 25px;
+}
+
+.slider__arrow-right {
+  display: block;
+  right: 100%;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.slider__list {
+  margin: 70px 0;
+}
+
+.slide__item {
+  display: flex;
+}
+
+.slider__image {
+  flex: 2;
+  max-width: 500px;
+  height: auto;
+  margin-top: 30px;
+  margin-right: 74px;
+}
+
+.slider__image-content {
+  width: 110%;
+  height: auto;
+}
+
+.slider__content {
+  flex: 1;
+  min-width: 360px;
+}
+
+.slider__compos {
+  width: 91px;
+  height: 91px;
+  border-radius: 4px;
+  background: #86c3d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 23px;
+  transition: 0.2s;
+  position: relative;
+
+  &:hover {
+    background: #63a3b8;
+  }
+}
+
+.slider__compos-image {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 4px;
+}
+
+.slider__compos-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14.01px;
+  line-height: 16.81px;
+}
+
+.slider__title {
+  text-transform: uppercase;
+  color: #292929;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43.2px;
+  margin-bottom: 23px;
+}
+
+.slider__info {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.slider__energy {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.slider__energy-calories {
+  margin-right: 44px;
+}
+
+.slider__energy-calories__title {
+  color: #666;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.slider__energy-calories__info {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #000;
+  font-weight: 700;
+}
+
+.slider__energy-weight__title {
+  @extend .slider__energy-calories__title;
+}
+
+.slider__energy-weight__info {
+  @extend .slider__energy-calories__info;
+}
+
+.slider__order {
+  display: flex;
+}
+
+.slider__order-sale {
+  color: #151515;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 300;
+  margin-right: 33px;
+}
+
+.btn__slider {
+  background: #497870;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.slider__compos-popup {
+  display: none;
+  position: absolute;
+  background: rgb(211, 211, 211);
+  padding: 30px;
+  left: 100%;
+  top: 0%;
+  border-radius: 4px;
+  width: 273px;
+  cursor: default;
+}
+
+.slider__compos-popup__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.slider__popup-content {
+  display: flex;
+}
+
+.popup__image {
+  margin-right: 16px;
+}
+
+.slider__popup-title {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slider__popup-weight {
+  color: #000;
+}
+
+.slider__order {
+  align-items: baseline;
+}
