@@ -1,6 +1,9 @@
 .team {
   height: 100vh;
   min-height: 36.11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .team .container {
   text-align: center;
@@ -50,6 +53,7 @@
   margin-bottom: 8px;
   cursor: pointer;
   padding-right: 4px;
+  transition: 0.3s;
 }
 .team__item-name::before {
   content: "";
@@ -61,11 +65,23 @@
   top: 10px;
 }
 
+.team__item-content {
+  display: none;
+}
+
 .team__item-content__position {
   margin-bottom: 4px;
+  font-weight: 700;
 }
 
 .team__item-content__about {
   margin: 0;
   font-weight: 300;
+  max-width: 259px;
+  margin: 0 auto;
+}
+
+.accord--active::before {
+  transform: rotate(180deg);
+  top: 5px;
 }

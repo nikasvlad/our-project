@@ -99,6 +99,19 @@
     justify-content: center;
   }
 
+  .team__list {
+    flex-direction: column;
+  }
+
+  .team__item {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .team__item-head {
+    display: none;
+  }
+
   .reviews__content-about {
     background: url(../../img/kust.png) top 1.22rem right/20% no-repeat;
     display: block;
