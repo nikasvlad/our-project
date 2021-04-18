@@ -6,12 +6,12 @@
   position: relative;
   background-color: #61c4d9;
 
-  &::before {
-    content: url("../../img/list_3.png");
-    left: 3%;
-    bottom: -1.38rem;
-    position: absolute;
-  }
+  // &::before {
+  //   content: url("../../img/list_3.png");
+  //   left: 3%;
+  //   bottom: -1.38rem;
+  //   position: absolute;
+  // }
 }
 
 // .container__header {
@@ -27,7 +27,8 @@
   height: 100%;
 
   .container {
-    background: url("../../img/comp_2.png") right center / 49% auto no-repeat;
+    background: url("../../img/comp_2.png") right center / 49% auto no-repeat,
+      url("../../img/list_3.png") bottom left no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
