@@ -6,7 +6,7 @@ $green: #497870;
   min-height: 36.11rem;
   background: url("../../img/listo4ek.png") right 1% bottom 6% no-repeat,
     url("../../img/e4rnika.png") left 3% bottom 7% no-repeat,
-    url("./../img/back.png") center center no-repeat;
+    url("../../img/back.png") center center no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,71 @@ $green: #497870;
   }
 }
 
+.form__container {
+  position: fixed;
+  z-index: 14000;
+  background-color: #313131;
+  background: rgba(36, 36, 36, 0.3);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cont--form___error {
+  position: fixed;
+  z-index: 14000;
+  background-color: #313131;
+  background: rgba(36, 36, 36, 0.3);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.form--block {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 309px;
+  height: 176px;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  opacity: 1;
+  text-align: center;
+}
+
+.form--block__text {
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.cont--form__text {
+  font-weight: 500;
+  line-height: 24px;
+  color: red;
+  margin-bottom: 18px;
+}
+
+.form--close__btn {
+  padding: 21px 41px;
+  border-radius: 50px;
+  background: #365a49;
+  transition: 0.1s;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 800;
+  &:hover {
+    background: #15422d;
+  }
+}
+
 .delivery__title {
   text-align: center;
   color: #365a49;
@@ -34,7 +99,7 @@ $green: #497870;
   margin-bottom: 3.27rem;
 }
 
-.form__container {
+#form__container {
   display: flex;
 }
 
@@ -177,7 +242,7 @@ $green: #497870;
   justify-content: end;
 }
 
-.delivery__form-button__submit {
+#delivery__form-button__submit {
   padding: 1.16rem 2.27rem;
   background: #2e4e3f;
   text-transform: uppercase;
@@ -199,6 +264,10 @@ $green: #497870;
 .delivery__form-button__reset {
   outline: none;
   height: 1.22rem;
+}
+
+.error {
+  color: red;
 }
 
 // .delivery__container {

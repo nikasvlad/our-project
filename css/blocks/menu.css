@@ -1,0 +1,141 @@
+.menu {
+  background: url(../../img/back__gor-accord.png);
+  background-size: cover;
+  height: 100vh;
+  height: 100vh;
+  min-height: 36.11rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #888;
+  opacity: 0.3;
+}
+
+.menu__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  top: 20%;
+  left: 10%;
+  position: absolute;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.slide__menu {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container---menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container---active {
+  z-index: 30000;
+  position: absolute;
+}
+
+.menu__slide {
+  width: 102px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.menu__slide::before {
+  position: absolute;
+  display: block;
+  z-index: 50;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(61, 57, 57, 0.6);
+}
+
+.menu--child-1 {
+  background: url("../../img/slide_1.png") center center no-repeat;
+  background-size: cover;
+}
+
+.menu--child-2 {
+  background: url("../../img/slide_2.png") center center no-repeat;
+  background-size: cover;
+}
+
+.menu--child-3 {
+  background: url("../../img/slide_3.png") center center no-repeat;
+  background-size: cover;
+}
+
+.menu__slide-title {
+  position: absolute;
+  z-index: 100;
+  bottom: 15%;
+  transform: rotate(-90deg);
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+  height: 365px;
+  width: 470px;
+  left: -30px;
+}
+
+.menu__slider--content {
+  overflow: hidden;
+  transition: width 0.5s;
+  width: 0;
+  position: relative;
+  background: rgba(51, 53, 55, 0.9);
+}
+
+.menu__slide-text {
+  margin: 20px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16.01px;
+  line-height: 24px;
+  width: 34vh;
+  position: relative;
+  margin-top: 35px;
+}
+
+.menu--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 20px;
+}
+
+.menu--close_btn {
+  display: block;
+  width: 25px;
+  height: 4px;
+  border-radius: 1px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: relative;
+}
+.menu--close_btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 4px;
+  border-radius: 1px;
+  background: #fff;
+  transform: rotate(-90deg);
+}

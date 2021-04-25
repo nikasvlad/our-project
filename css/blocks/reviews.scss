@@ -1,11 +1,9 @@
 $black: #292929;
 
 .reviews {
-  margin-bottom: 6.94rem;
-  background: url("../../img/zlaki.png") top right 3% no-repeat;
+  background: url("../../img/zlaki.png") top 5% right 2% no-repeat;
   position: relative;
   height: 100vh;
-  min-height: 12.77rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +45,7 @@ $black: #292929;
 
 .reviews__content {
   position: relative;
+  display: none;
   &::before {
     content: "";
     position: absolute;
@@ -59,6 +58,10 @@ $black: #292929;
     height: 3rem;
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
   }
+}
+
+.reviews--active {
+  display: block;
 }
 
 .reviews__content-about {
@@ -113,17 +116,63 @@ $black: #292929;
   }
 }
 
-@each $names in alena, vadim, masha {
-  .reviews__content-list__item-link__#{$names} {
+.reviews__content-list__item-link {
+  display: block;
+  width: 74px;
+  height: 74px;
+  position: relative;
+  &::before {
+    content: "";
     display: block;
-    background-image: url("../../img/#{$names}.png");
-    width: 74px;
-    height: 74px;
-  }
-  .reviews__img--active {
-    display: block;
-    background-image: url("../../img/alena_1.png");
-    width: 74px;
-    height: 74px;
+    opacity: 0;
+    transition: border 0.1s;
   }
 }
+
+.reviews__content--active {
+  &::before {
+    content: "";
+    opacity: 1;
+    border: 4px solid #365a49;
+    border-radius: 50px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.reviews__content-list__item-link:hover::before {
+  content: "";
+  opacity: 1;
+  border: 4px solid #365a49;
+  border-radius: 50px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // transition: opacity 0.1s linear;
+  // z-index: 10000;
+}
+
+// @each $names in alena, vadim, masha {
+//   .reviews__content-list__item-link__#{$names} {
+//     display: block;
+//     background-image: url("../../img/#{$names}.png");
+//     width: 74px;
+//     height: 74px;
+//   }
+//   .reviews__img--active {
+//     display: block;
+//     background-image: url("../../img/alena_1.png");
+//     width: 74px;
+//     height: 74px;
+//     border: 10px solid red;
+//   }
+// }

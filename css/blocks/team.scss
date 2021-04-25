@@ -21,6 +21,9 @@
 .team__list {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+  min-height: 550px;
 }
 
 .team__item {
@@ -35,6 +38,14 @@
 
 .team__item-head {
   margin-bottom: 20px;
+}
+
+.team__item-head {
+  display: inline-block;
+}
+
+.team__item-head--active {
+  display: none;
 }
 
 .team__item-head__img {

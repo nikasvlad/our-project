@@ -1,10 +1,16 @@
+.contacts {
+  height: 100vh;
+}
+
 .contacts__map {
+  // width: 600px;
+  // height: 400px;
   width: 100%;
-  height: auto;
+  height: 88%;
 }
 
 .contacts__map-content {
-  height: 100vh;
+  // height: ;
   width: 100%;
   overflow: hidden;
 }

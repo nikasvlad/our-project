@@ -1,9 +1,7 @@
 .reviews {
-  margin-bottom: 6.94rem;
-  background: url("../../img/zlaki.png") top right 3% no-repeat;
+  background: url("../../img/zlaki.png") top 5% right 2% no-repeat;
   position: relative;
   height: 100vh;
-  min-height: 12.77rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,6 +41,7 @@
 
 .reviews__content {
   position: relative;
+  display: none;
 }
 .reviews__content::before {
   content: "";
@@ -55,6 +54,10 @@
   width: 4.6rem;
   height: 3rem;
   border-radius: 0 0 50% 50%/0 0 100% 100%;
+}
+
+.reviews--active {
+  display: block;
 }
 
 .reviews__content-about {
@@ -108,44 +111,43 @@
   margin-right: 0;
 }
 
-.reviews__content-list__item-link__alena {
+.reviews__content-list__item-link {
   display: block;
-  background-image: url("../../img/alena.png");
   width: 74px;
   height: 74px;
+  position: relative;
+}
+.reviews__content-list__item-link::before {
+  content: "";
+  display: block;
+  opacity: 0;
+  transition: border 0.1s;
 }
 
-.reviews__img--active {
+.reviews__content--active::before {
+  content: "";
+  opacity: 1;
+  border: 4px solid #365a49;
+  border-radius: 50px;
   display: block;
-  background-image: url("../../img/alena_1.png");
-  width: 74px;
-  height: 74px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.reviews__content-list__item-link__vadim {
+.reviews__content-list__item-link:hover::before {
+  content: "";
+  opacity: 1;
+  border: 4px solid #365a49;
+  border-radius: 50px;
   display: block;
-  background-image: url("../../img/vadim.png");
-  width: 74px;
-  height: 74px;
-}
-
-.reviews__img--active {
-  display: block;
-  background-image: url("../../img/alena_1.png");
-  width: 74px;
-  height: 74px;
-}
-
-.reviews__content-list__item-link__masha {
-  display: block;
-  background-image: url("../../img/masha.png");
-  width: 74px;
-  height: 74px;
-}
-
-.reviews__img--active {
-  display: block;
-  background-image: url("../../img/alena_1.png");
-  width: 74px;
-  height: 74px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

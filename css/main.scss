@@ -5,7 +5,9 @@
 @import url("../css/blocks/main.css");
 @import url("../css/blocks/sidebar.css");
 @import url("../css/blocks/why.css");
+@import url("../css/blocks/menu.css");
 @import url("../css/blocks/reviews.css");
+@import url("../css/blocks/video.css");
 @import url("../css/blocks/delivery.css");
 @import url("../css/blocks/contacts.css");
 @import url("../css/blocks/slider.css");
@@ -101,6 +103,7 @@
 
   .team__list {
     flex-direction: column;
+    min-height: 100px;
   }
 
   .team__item {
@@ -112,6 +115,14 @@
     display: none;
   }
 
+  .team__item-head {
+    display: none;
+  }
+
+  .team__item-head--active {
+    display: inline-block;
+  }
+
   .reviews__content-about {
     background: url(../../img/kust.png) top 1.22rem right/20% no-repeat;
     display: block;
@@ -120,6 +131,11 @@
 
   .reviews__content-about__info-myself {
     max-width: none;
+  }
+
+  .reviews__content-about__logo-img {
+    width: 130px;
+    height: 130px;
   }
 
   .delivery {
@@ -139,7 +155,7 @@
     content: "";
   }
 
-  .form__container {
+  #form__container {
     display: block;
     max-width: 25.88rem;
     margin: 0 auto;
@@ -151,6 +167,54 @@
 
   .contacts__info {
     padding: 1.55rem 1.66rem;
+  }
+}
+
+@media (max-width: 678px) {
+  .menu__slide-text {
+    width: 300px;
+    margin: 15px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu__slide-text {
+    width: 250px;
+    margin: 12px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 570px) {
+  .menu__slide-text {
+    width: 200px;
+    margin: 10px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 540px) {
+  .menu__slide-text {
+    width: 150px;
+    margin: 7px;
+    margin-top: 35px;
+  }
+
+  .menu__title {
+    left: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu__slide-text {
+    width: 340px;
+  }
+}
+
+@media (max-width: 490px) {
+  .menu__title {
+    left: 2%;
   }
 }
 
@@ -221,6 +285,19 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .menu__title {
+    transform: rotate(-90deg);
+    left: -15px;
+  }
+
+  .menu__slide {
+    width: 90px;
+  }
+
+  .menu__slide-text {
+    width: 300px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -230,6 +307,24 @@
 
   .why::after {
     bottom: -4.55rem;
+  }
+
+  .menu__slide-text {
+    width: 240px;
+  }
+}
+
+@media (max-width: 380px) {
+  .menu__title {
+    left: -35px;
+  }
+}
+@media (max-width: 360px) {
+  .menu__slide-text {
+    width: 200px;
+  }
+  .menu__title {
+    left: -53px;
   }
 }
 

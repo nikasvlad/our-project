@@ -1,8 +1,6 @@
 .main__color {
   background: url("../../img/list_2.png") bottom right no-repeat;
-  height: 100vh;
-  min-height: 36.11rem;
-  margin-bottom: 5.55rem;
+  height: 100%;
   position: relative;
   background-color: #61c4d9;
 }
